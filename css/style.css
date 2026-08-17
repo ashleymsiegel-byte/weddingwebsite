@@ -286,7 +286,6 @@ em { font-style: italic; color: var(--brown); }
   grid-template-columns: 380px 1fr;
   gap: 56px;
   align-items: center;
-  margin-bottom: 80px;
 }
 .story-proposal-photo {
   width: 100%;
@@ -316,6 +315,7 @@ em { font-style: italic; color: var(--brown); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
+  margin-bottom: 80px;
 }
 .story-columns h3 {
   font-family: 'Cormorant Garamond', serif;
@@ -324,6 +324,13 @@ em { font-style: italic; color: var(--brown); }
   color: var(--espresso);
   margin-bottom: 16px;
 }
+.story-copy p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--espresso);
+  margin: 0 0 18px;
+}
+.story-copy p:last-child { margin-bottom: 0; }
 
 @media (max-width: 800px) {
   .story-proposal { grid-template-columns: 1fr; }
@@ -434,7 +441,7 @@ em { font-style: italic; color: var(--brown); }
   gap: 14px;
   margin-bottom: 28px;
 }
-.section-heading-row img { width: 64px; height: 64px; object-fit: contain; }
+.section-heading-row img { width: 96px; height: 96px; object-fit: contain; }
 .section-heading-row h2 { font-size: 28px; }
 
 .airport-list { display: flex; flex-direction: column; gap: 2px; margin-bottom: 64px; }
