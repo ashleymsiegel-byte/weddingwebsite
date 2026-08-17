@@ -350,7 +350,7 @@ em { font-style: italic; color: var(--brown); }
 }
 .timeline-rail {
   position: absolute;
-  left: 164px;
+  left: 228px;
   top: 22px;
   bottom: 360px;
   width: 1px;
