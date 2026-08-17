@@ -343,7 +343,7 @@ em { font-style: italic; color: var(--brown); }
 }
 .timeline-rail {
   position: absolute;
-  left: 160px;
+  left: 148px;
   top: 20px;
   bottom: 100px;
   width: 1px;
@@ -358,8 +358,8 @@ em { font-style: italic; color: var(--brown); }
 }
 .timeline-dot {
   position: absolute;
-  left: 160px;
-  top: 8px;
+  left: 148px;
+  top: 9px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -371,6 +371,7 @@ em { font-style: italic; color: var(--brown); }
   font-size: 16px;
   color: var(--gold);
   padding-top: 2px;
+  text-align: right;
 }
 .timeline-content-row {
   display: grid;
@@ -423,10 +424,11 @@ em { font-style: italic; color: var(--brown); }
 .section-heading-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 14px;
   margin-bottom: 28px;
 }
-.section-heading-row img { width: 46px; height: 46px; object-fit: contain; }
+.section-heading-row img { width: 64px; height: 64px; object-fit: contain; }
 .section-heading-row h2 { font-size: 28px; }
 
 .airport-list { display: flex; flex-direction: column; gap: 2px; margin-bottom: 64px; }
