@@ -381,7 +381,7 @@ em { font-style: italic; color: var(--brown); }
 .timeline-date {
   font-family: 'Cormorant Garamond', serif;
   font-size: 16px;
-  color: var(--gold);
+  color: var(--brown);
   text-align: right;
 }
 .timeline-title { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 400; margin: 0; }
@@ -481,7 +481,7 @@ em { font-style: italic; color: var(--brown); }
 .stay-section { padding: 100px 64px 40px; max-width: 1080px; margin: 0 auto; }
 .stay-lede { margin-bottom: 64px; max-width: none; }
 .stay-sub-eyebrow {
-  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brown); margin-bottom: 16px;
 }
 
 .host-hotel {
@@ -499,6 +499,7 @@ em { font-style: italic; color: var(--brown); }
 .host-hotel p { font-size: 13px; line-height: 1.8; color: var(--espresso); white-space: pre-line; margin: 0 0 20px; }
 .host-hotel-link {
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none;
+  color: var(--gold-dark);
   border-bottom: 1px solid var(--gold); padding-bottom: 2px;
 }
 
@@ -509,7 +510,7 @@ em { font-style: italic; color: var(--brown); }
 .hotel-card { background: var(--linen); padding: 26px; }
 .hotel-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--espresso); margin-bottom: 10px; }
 .hotel-card p { font-size: 13px; line-height: 1.75; color: var(--brown); margin: 0 0 14px; }
-.hotel-link { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
+.hotel-link { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--gold-dark); }
 
 .subheading { font-size: 22px; margin: 0 0 20px; }
 .subheading-note { font-size: 13px; color: var(--brown); margin: 0 0 20px; }
