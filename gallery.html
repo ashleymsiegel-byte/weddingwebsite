@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RSVP — Ashley &amp; Eli</title>
+<title>Gallery — Ashley &amp; Eli</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -25,53 +25,32 @@
       <a href="explore.html">Explore</a>
       <a href="wear.html">What to Wear</a>
       <a href="registry.html">Registry</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="gallery.html" class="active">Gallery</a>
       <a href="faq.html">FAQ</a>
-      <a href="rsvp.html" class="active">RSVP</a>
+      <a href="rsvp.html">RSVP</a>
     </nav>
   </div>
 </header>
 
 <div class="page-body">
-<section class="rsvp-section">
-  <div class="eyebrow">RSVP</div>
-  <h1 class="page-title">Reserve Your Spot</h1>
+<section class="gallery-section">
+  <div class="eyebrow">A Few of Our Favorites</div>
+  <h1 class="page-title">Gallery</h1>
   <img class="leaf-divider" src="assets/leaf-divider.png" alt="">
+  <p class="gallery-sub">Click any photo for a closer look. More to come as the big day gets closer.</p>
 
-  <div class="rsvp-banner">Our invitations will arrive later this year and RSVPs will be conveniently located here for you to share your plans with us. Feel free to preview the form below.</div>
-
-  <div class="rsvp-thankyou" hidden>
-    <div class="rsvp-thankyou-title">Thank you!</div>
-    <p>This is a preview of our RSVP form &mdash; real invitations and RSVPs open later this year!</p>
+  <div class="gallery-grid">
+    <button class="gallery-item"><img src="assets/photo-proposal.jpg" alt="Ashley and Eli"></button>
+    <button class="gallery-item"><img src="assets/photo-engparty.jpg" alt="Ashley and Eli"></button>
+    <button class="gallery-item"><img src="assets/photo-nyc.jpg" alt="Ashley and Eli"></button>
+    <button class="gallery-item"><img src="assets/photo-hero.jpg" alt="Ashley and Eli"></button>
   </div>
-
-  <form class="rsvp-form">
-    <label>
-      <span class="field-label">Full name(s)</span>
-      <input type="text" required placeholder="Ashley Siegel">
-    </label>
-    <label>
-      <span class="field-label">Will you be able to join us to celebrate?</span>
-      <select>
-        <option value="yes">Yes, we cannot wait!</option>
-        <option value="no">We sadly cannot make it</option>
-      </select>
-    </label>
-    <label>
-      <span class="field-label">Dietary restrictions / allergies</span>
-      <textarea rows="2"></textarea>
-    </label>
-    <label>
-      <span class="field-label">Accessibility needs</span>
-      <textarea rows="2"></textarea>
-    </label>
-    <label>
-      <span class="field-label">Note to the couple</span>
-      <textarea rows="3"></textarea>
-    </label>
-    <button type="submit" class="rsvp-submit">Preview Submit</button>
-  </form>
 </section>
+</div>
+
+<div class="gallery-lightbox" hidden>
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <img class="lightbox-img" src="" alt="">
 </div>
 
 <footer class="site-footer">
