@@ -151,7 +151,8 @@ em { font-style: italic; color: var(--brown); }
   font-size: 10px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--brown);
+  font-weight: 400;
   margin-bottom: 16px;
 }
 
@@ -564,7 +565,6 @@ em { font-style: italic; color: var(--brown); }
 .rsvp-banner { background: var(--linen); padding: 18px 22px; font-size: 13px; line-height: 1.7; color: var(--brown); margin-bottom: 40px; }
 
 .rsvp-form { display: flex; flex-direction: column; gap: 22px; }
-.rsvp-form[hidden], .rsvp-thankyou[hidden] { display: none; }
 .rsvp-form label { display: flex; flex-direction: column; gap: 8px; }
 .rsvp-form .field-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brown); }
 .rsvp-form input[type="text"],
@@ -581,10 +581,10 @@ em { font-style: italic; color: var(--brown); }
   font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;
 }
 .rsvp-submit:hover { background: #3d372b; }
-
-.rsvp-thankyou { background: var(--espresso); color: var(--ivory); padding: 48px 36px; text-align: center; }
-.rsvp-thankyou-title { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 26px; margin-bottom: 12px; color: var(--gold-light); }
-.rsvp-thankyou p { font-size: 13px; line-height: 1.7; color: var(--muted-cream); margin: 0; }
+.rsvp-submit:disabled {
+  background: var(--border); color: var(--brown); cursor: not-allowed;
+}
+.rsvp-submit:disabled:hover { background: var(--border); }
 
 /* ---------- Gallery ---------- */
 

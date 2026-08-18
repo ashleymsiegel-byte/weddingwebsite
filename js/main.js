@@ -18,16 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  var rsvpForm = document.querySelector('.rsvp-form');
-  if (rsvpForm) {
-    rsvpForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      rsvpForm.hidden = true;
-      var thankYou = document.querySelector('.rsvp-thankyou');
-      if (thankYou) thankYou.hidden = false;
-    });
-  }
-
   var lightbox = document.querySelector('.gallery-lightbox');
   if (lightbox) {
     var lightboxImg = lightbox.querySelector('.lightbox-img');
