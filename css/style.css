@@ -589,6 +589,7 @@ em { font-style: italic; color: var(--brown); }
 /* ---------- Gallery ---------- */
 
 .gallery-section { padding: 100px 64px 140px; max-width: 1200px; margin: 0 auto; }
+.gallery-title-block { text-align: center; margin-bottom: 56px; }
 
 .gallery-grid {
   display: grid;
