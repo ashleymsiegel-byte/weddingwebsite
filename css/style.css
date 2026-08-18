@@ -432,15 +432,34 @@ em { font-style: italic; color: var(--brown); }
 
 /* ---------- Travel ---------- */
 
-.travel-section { padding: 100px 64px 40px; max-width: 1000px; margin: 0 auto; }
-.travel-lede { margin-bottom: 64px; max-width: none; }
+.travel-section { padding: 100px 64px 40px; max-width: 1000px; margin: 0 auto; position: relative; }
+.travel-lede { margin-bottom: 64px; max-width: 560px; }
+.travel-hero-doodle {
+  position: absolute;
+  top: 128px;
+  right: 64px;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .travel-lede { max-width: none; }
+  .travel-hero-doodle {
+    position: static;
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 32px;
+  }
+}
 
 .section-heading-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 12px;
 }
 .section-heading-row img { width: 180px; height: 180px; object-fit: contain; }
 .section-heading-row h2 { font-size: 28px; }
