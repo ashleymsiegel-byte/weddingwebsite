@@ -7,16 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=15">
+<link rel="stylesheet" href="css/style.css?v=16">
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <header class="site-header">
   <div class="header-bar"></div>
   <div class="header-inner">
     <a href="index.html" class="logo-link"><img src="assets/logo-wordmark.png" alt="Ashley &amp; Eli"></a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Site">
       <a href="index.html">Home</a>
       <a href="story.html">Our Story</a>
       <a href="weekend.html">The Weekend</a>
@@ -32,7 +33,7 @@
   </div>
 </header>
 
-<div class="page-body">
+<main class="page-body" id="main-content" tabindex="-1">
 <section class="travel-section">
   <div class="eyebrow">Getting Here</div>
   <h1 class="page-title">Travel</h1>
@@ -44,41 +45,41 @@
     <h2>Flying</h2>
     <img src="assets/plane-doodle.png" alt="">
   </div>
-  <div class="airport-list">
-    <div class="airport-card">
+  <ul class="airport-list">
+    <li class="airport-card">
       <div class="airport-name">San Francisco International Airport (SFO)</div>
       <div class="airport-desc">SFO offers the widest selection of domestic and international flights and is about 50 miles (roughly an 80-minute drive) from Sonoma, depending on traffic.</div>
-    </div>
-    <div class="airport-card">
+    </li>
+    <li class="airport-card">
       <div class="airport-name">Sacramento International Airport (SMF)</div>
       <div class="airport-desc">Locals&rsquo; top recommendation! Sacramento is a relaxed, easy-to-navigate airport with plenty of flight options and is about a 90-minute drive from Sonoma &mdash; about the same as SFO without navigating a major city.</div>
-    </div>
-    <div class="airport-card">
+    </li>
+    <li class="airport-card">
       <div class="airport-name">Sonoma County Airport (STS &ndash; Santa Rosa)</div>
       <div class="airport-desc">The closest airport to Sonoma, Santa Rosa is a convenient regional airport with limited but growing flight options. It&rsquo;s about a 45-minute drive to Sonoma.</div>
-    </div>
-  </div>
+    </li>
+  </ul>
 
   <div class="section-heading-row">
     <h2>Driving &amp; Getting Around</h2>
     <img src="assets/car-doodle.png" alt="">
   </div>
-  <div class="note-list">
-    <div class="note-row">
+  <ul class="note-list">
+    <li class="note-row">
       <div class="note-dot"></div>
       <p>We recommend renting a car, both for getting to Sonoma and for exploring everything wine country has to offer. From charming town squares to world-class wineries and incredible restaurants, having a car gives you the most flexibility during your stay, and parking is free at The Lodge.</p>
-    </div>
-    <div class="note-row">
+    </li>
+    <li class="note-row">
       <div class="note-dot"></div>
       <p>If you&rsquo;d rather skip the rental car, rideshares are readily available throughout the area, and many hotels offer local transportation options.</p>
-    </div>
-    <div class="note-row">
+    </li>
+    <li class="note-row">
       <div class="note-dot"></div>
       <p>The Lodge at Sonoma also offers a complimentary shuttle (in an adorable electric VW bus!) between the hotel and Sonoma Plaza, stopping near City Hall. Downtown Sonoma is full of amazing shops, restaurants, and tasting rooms.</p>
-    </div>
-  </div>
+    </li>
+  </ul>
 </section>
-</div>
+</main>
 
 <footer class="site-footer">
   <div class="footer-names">Ashley <span class="amp">&amp;</span> Eli</div>

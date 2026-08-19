@@ -7,16 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=15">
+<link rel="stylesheet" href="css/style.css?v=16">
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <header class="site-header">
   <div class="header-bar"></div>
   <div class="header-inner">
     <a href="index.html" class="logo-link"><img src="assets/logo-wordmark.png" alt="Ashley &amp; Eli"></a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Site">
       <a href="index.html">Home</a>
       <a href="story.html">Our Story</a>
       <a href="weekend.html">The Weekend</a>
@@ -32,7 +33,7 @@
   </div>
 </header>
 
-<div class="page-body">
+<main class="page-body" id="main-content" tabindex="-1">
 <section class="gallery-section">
   <div class="gallery-title-block">
     <div class="eyebrow">A Few of Our Favorites</div>
@@ -59,9 +60,9 @@
     <button class="gallery-item"><img src="assets/gallery/photo-16.jpg" alt="Ashley and Eli"></button>
   </div>
 </section>
-</div>
+</main>
 
-<div class="gallery-lightbox" hidden>
+<div class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
   <button class="lightbox-close" aria-label="Close">&times;</button>
   <img class="lightbox-img" src="" alt="">
 </div>

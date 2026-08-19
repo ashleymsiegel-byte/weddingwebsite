@@ -7,16 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=15">
+<link rel="stylesheet" href="css/style.css?v=16">
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <header class="site-header">
   <div class="header-bar"></div>
   <div class="header-inner">
     <a href="index.html" class="logo-link"><img src="assets/logo-wordmark.png" alt="Ashley &amp; Eli"></a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Site">
       <a href="index.html">Home</a>
       <a href="story.html">Our Story</a>
       <a href="weekend.html" class="active">The Weekend</a>
@@ -32,7 +33,7 @@
   </div>
 </header>
 
-<div class="page-body">
+<main class="page-body" id="main-content" tabindex="-1">
 
 <section class="page-header weekend-intro">
   <div class="eyebrow">Friday, May 21, 2027 &amp; the days around it</div>
@@ -46,63 +47,65 @@ With loved ones traveling from all over, we&rsquo;re turning our wedding into a 
 <section class="timeline">
   <div class="timeline-rail"></div>
 
-  <div class="timeline-day">
-    <div class="timeline-head">
-      <div class="timeline-date">Thursday, May 20th</div>
-      <div class="timeline-dot"></div>
-      <h3 class="timeline-title">The Welcome</h3>
-    </div>
-    <div class="timeline-body">
-      <div class="timeline-content-row">
-        <div>
-          <div class="timeline-details">Full details coming soon</div>
-        </div>
-        <img class="timeline-doodle" src="assets/tree-doodle.png" alt="The Welcome">
+  <ul class="timeline-list">
+    <li class="timeline-day">
+      <div class="timeline-head">
+        <div class="timeline-date">Thursday, May 20th</div>
+        <div class="timeline-dot"></div>
+        <h3 class="timeline-title">The Welcome</h3>
       </div>
-    </div>
-  </div>
+      <div class="timeline-body">
+        <div class="timeline-content-row">
+          <div>
+            <div class="timeline-details">Full details coming soon</div>
+          </div>
+          <img class="timeline-doodle" src="assets/tree-doodle.png" alt="The Welcome">
+        </div>
+      </div>
+    </li>
 
-  <div class="timeline-day">
-    <div class="timeline-head">
-      <div class="timeline-date">Friday, May 21st</div>
-      <div class="timeline-dot"></div>
-      <h3 class="timeline-title">The Wedding</h3>
-    </div>
-    <div class="timeline-body">
-      <div class="timeline-content-row">
-        <div>
-          <p class="timeline-desc">Our ceremony, dinner, and reception are just a few minutes down the road at the beautiful Cornerstone Gardens.</p>
-          <div class="timeline-details">Ceremony begins at 5:00 PM. Cornerstone Gardens and shops are open (to you and the public) until 5p &mdash; feel free to arrive early and explore the grounds.</div>
-          <p class="timeline-note">For the Ashleys among us, the ceremony starts at 4:30 PM. :)</p>
-          <p class="timeline-reception">Dinner, drinks, and dancing will follow.</p>
-        </div>
-        <img class="timeline-doodle" src="assets/weekend-doodle-tile.png" alt="The Wedding" style="width:380px;height:380px;">
+    <li class="timeline-day">
+      <div class="timeline-head">
+        <div class="timeline-date">Friday, May 21st</div>
+        <div class="timeline-dot"></div>
+        <h3 class="timeline-title">The Wedding</h3>
       </div>
-    </div>
-  </div>
+      <div class="timeline-body">
+        <div class="timeline-content-row">
+          <div>
+            <p class="timeline-desc">Our ceremony, dinner, and reception are just a few minutes down the road at the beautiful Cornerstone Gardens.</p>
+            <div class="timeline-details">Ceremony begins at 5:00 PM. Cornerstone Gardens and shops are open (to you and the public) until 5p &mdash; feel free to arrive early and explore the grounds.</div>
+            <p class="timeline-note">For the Ashleys among us, the ceremony starts at 4:30 PM. :)</p>
+            <p class="timeline-reception">Dinner, drinks, and dancing will follow.</p>
+          </div>
+          <img class="timeline-doodle" src="assets/weekend-doodle-tile.png" alt="The Wedding" style="width:380px;height:380px;">
+        </div>
+      </div>
+    </li>
 
-  <div class="timeline-day">
-    <div class="timeline-head">
-      <div class="timeline-date">Saturday, May 22nd</div>
-      <div class="timeline-dot"></div>
-      <h3 class="timeline-title">The Send Off</h3>
-    </div>
-    <div class="timeline-body">
-      <div class="timeline-content-row">
-        <div>
-          <div class="timeline-details">Full details coming soon</div>
-        </div>
-        <img class="timeline-doodle" src="assets/pool-doodle.png" alt="The Send Off">
+    <li class="timeline-day">
+      <div class="timeline-head">
+        <div class="timeline-date">Saturday, May 22nd</div>
+        <div class="timeline-dot"></div>
+        <h3 class="timeline-title">The Send Off</h3>
       </div>
-    </div>
-  </div>
+      <div class="timeline-body">
+        <div class="timeline-content-row">
+          <div>
+            <div class="timeline-details">Full details coming soon</div>
+          </div>
+          <img class="timeline-doodle" src="assets/pool-doodle.png" alt="The Send Off">
+        </div>
+      </div>
+    </li>
+  </ul>
 </section>
 
 <section class="closing-quote">
   <p>Here&rsquo;s to slow mornings, golden evenings, vineyard views, and a weekend we&rsquo;ll never forget. We can&rsquo;t wait to share this special place with you, and we hope you leave loving wine country as much as we do.</p>
 </section>
 
-</div>
+</main>
 
 <footer class="site-footer">
   <div class="footer-names">Ashley <span class="amp">&amp;</span> Eli</div>

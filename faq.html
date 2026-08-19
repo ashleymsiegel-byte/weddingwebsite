@@ -7,16 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=15">
+<link rel="stylesheet" href="css/style.css?v=16">
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
 <header class="site-header">
   <div class="header-bar"></div>
   <div class="header-inner">
     <a href="index.html" class="logo-link"><img src="assets/logo-wordmark.png" alt="Ashley &amp; Eli"></a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Site">
       <a href="index.html">Home</a>
       <a href="story.html">Our Story</a>
       <a href="weekend.html">The Weekend</a>
@@ -32,21 +33,21 @@
   </div>
 </header>
 
-<div class="page-body">
+<main class="page-body" id="main-content" tabindex="-1">
 <section class="faq-section">
   <div class="eyebrow">Questions &amp; Answers</div>
   <h1 class="page-title">FAQs</h1>
   <img class="leaf-divider" src="assets/leaf-divider.png" alt="">
   <p class="faq-sub">Everything you need to know about our wedding.</p>
 
-  <div class="faq-list">
+  <ul class="faq-list">
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
         <span class="faq-question-text">When is the big day?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-1">
         <p>We&rsquo;ll be getting married on Friday, May 21, 2027, in Sonoma, California!
 
 We recommend arriving by Thursday, May 20 so you can join us for our Welcome Party, and staying through Saturday, May 22 to celebrate one last time at our Farewell Celebration.
@@ -54,14 +55,14 @@ We recommend arriving by Thursday, May 20 so you can join us for our Welcome Par
 You can find the full weekend schedule on our The Weekend page.</p>
         <a href="weekend.html">View the Weekend page &rarr;</a>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
         <span class="faq-question-text">Where are you getting married?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-2">
         <p>Our wedding will take place at Cornerstone Gardens in Sonoma, California.
 
 Our home away from home for the weekend is The Lodge at Sonoma, just five minutes from Cornerstone, and host of our Welcome Party and Farewell Celebration.
@@ -69,147 +70,147 @@ Our home away from home for the weekend is The Lodge at Sonoma, just five minute
 You&rsquo;ll find everything you need to plan your trip, including airports, hotels, and transportation, on our Travel and Stay pages.</p>
         <a href="travel.html">View the Travel page &rarr;</a>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
         <span class="faq-question-text">When will more details be available?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-3">
         <p>You&rsquo;re seeing an early look at our wedding weekend! We&rsquo;ll continue updating this website as plans come together over the coming months.
 
 Our formal invitations will arrive later this year with RSVP details and everything you&rsquo;ll need to celebrate with us. Until then, this website is the best place to find the latest information.</p>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
         <span class="faq-question-text">Why Sonoma?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-4">
         <p>Wine country is one of our favorite places in the world. We never get tired of the rolling hills, vibrant wildflowers, hot air balloons at sunrise, and incredible food. Most importantly, it&rsquo;s where we got engaged and spent some of our favorite days together.
 
 When it came time to choose where we&rsquo;d begin this next chapter, there was nowhere that felt more like us.</p>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
         <span class="faq-question-text">What should I wear?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-5">
         <p>Our dress code is Golden Hour Formal.
 
 You&rsquo;ll find all the details, inspiration, and our color palette on our What to Wear page.</p>
         <a href="wear.html">View the What to Wear page &rarr;</a>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
         <span class="faq-question-text">What is the weather like in Sonoma in May?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-6">
         <p>Late May is one of our favorite times of year in Sonoma. Expect warm, sunny days with daytime temperatures typically in the 70s, while evenings can cool into the 50s.
 
 Our ceremony and celebration will take place primarily outdoors, so we recommend bringing a layer for later in the evening.</p>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
         <span class="faq-question-text">Will there be rituals or traditions?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-7">
         <p>Yes! But in our own unique way. We&rsquo;re excited to incorporate Jewish traditions that honor our heritage while reimagining them in a way that reflects who we are and what we value.
 
 Think heartfelt moments, intentional symbolism, and a celebration grounded in love, family, and community.</p>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
         <span class="faq-question-text">How can we celebrate you respectfully?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-8">
         <p>We&rsquo;re so glad you asked! Our wedding celebrates love and partnership, and you&rsquo;ll hear us use a mix of language that feels true to us &mdash; words like spouses, partners, marriage, and celebration.
 
 We gently ask guests to avoid traditional titles like Mr. and Mrs.; we&rsquo;ll be using Mx. and Mx. as our honorifics. Eli uses they/them pronouns. Ashley uses she/her and they/them interchangeably.
 
 We encourage everyone to avoid making assumptions about other guests&rsquo; pronouns and to help us create a celebration where all of our chosen family feel seen, respected, and loved.</p>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-9">
         <span class="faq-question-text">How do I get to Sonoma?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-9">
         <p>We&rsquo;ve put together everything you need to know about airports, driving, rental cars, and getting around wine country on our Travel page.</p>
         <a href="travel.html">View the Travel page &rarr;</a>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-10">
         <span class="faq-question-text">Where should I stay?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-10">
         <p>Our host hotel is The Lodge at Sonoma &mdash; we hope as many people as possible join us there. We&rsquo;ll also be gathering at The Lodge for our Welcome Party and Farewell Celebration.
 
 There are tons of incredible places to stay in wine country; more recommendations are on our Stay page.</p>
         <a href="stay.html">View the Stay page &rarr;</a>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-11">
         <span class="faq-question-text">Is your wedding accessible?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-11">
         <p>Accessibility is a core part of how we&rsquo;re planning our wedding weekend. Our RSVP will include a place to share any accessibility needs, accommodations, dietary restrictions, or allergies so we can thoughtfully plan a celebration where everyone feels cared for.
 
 Our reception will also include a dedicated sensory space for anyone who would like a quiet place to step away and recharge.</p>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-12">
         <span class="faq-question-text">Do you have a registry?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-12">
         <p>Your presence is truly the greatest gift we could ask for.
 
 If you&rsquo;d like to honor us with a gift, we&rsquo;ve created a honeymoon and family planning fund, along with the opportunity to support several organizations meaningful to us.</p>
         <a href="registry.html">View the Registry page &rarr;</a>
       </div>
-    </div>
+    </li>
 
-    <div class="faq-item">
-      <button class="faq-question">
+    <li class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-13">
         <span class="faq-question-text">How can I stay updated?</span>
         <span class="faq-icon">+</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" id="faq-answer-13">
         <p>This website will always have the latest information about our wedding weekend, including travel details, accommodations, and any updates as they come together.
 
 We&rsquo;ll continue adding information here as the big day gets closer, so be sure to check back from time to time.</p>
       </div>
-    </div>
+    </li>
 
-  </div>
+  </ul>
 </section>
-</div>
+</main>
 
 <footer class="site-footer">
   <div class="footer-names">Ashley <span class="amp">&amp;</span> Eli</div>
