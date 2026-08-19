@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=14">
+<link rel="stylesheet" href="css/style.css?v=15">
 </head>
 <body>
 
@@ -41,29 +41,34 @@
   <div class="rsvp-banner">Our invitations will arrive later this year, and RSVPs will be conveniently located here for you to share your plans with us.</div>
 
   <form class="rsvp-form">
-    <label>
-      <span class="field-label">Full name(s)</span>
-      <input type="text" required placeholder="Ashley Siegel">
-    </label>
-    <label>
-      <span class="field-label">Will you be able to join us to celebrate?</span>
-      <select>
-        <option value="yes">Yes, we cannot wait!</option>
-        <option value="no">We sadly cannot make it</option>
-      </select>
-    </label>
-    <label>
-      <span class="field-label">Dietary restrictions / allergies</span>
-      <textarea rows="2"></textarea>
-    </label>
-    <label>
-      <span class="field-label">Accessibility needs</span>
-      <textarea rows="2"></textarea>
-    </label>
-    <label>
-      <span class="field-label">Note to the couple</span>
-      <textarea rows="3"></textarea>
-    </label>
+    <div class="rsvp-fields-wrap">
+      <label>
+        <span class="field-label">Full name(s)</span>
+        <input type="text" required placeholder="Ashley Siegel">
+      </label>
+      <label>
+        <span class="field-label">Will you be able to join us to celebrate?</span>
+        <select>
+          <option value="yes">Yes, we cannot wait!</option>
+          <option value="no">We sadly cannot make it</option>
+        </select>
+      </label>
+      <label>
+        <span class="field-label">Dietary restrictions / allergies</span>
+        <textarea rows="2"></textarea>
+      </label>
+      <label>
+        <span class="field-label">Accessibility needs</span>
+        <textarea rows="2"></textarea>
+      </label>
+      <label>
+        <span class="field-label">Note to the couple</span>
+        <textarea rows="3"></textarea>
+      </label>
+      <div class="rsvp-overlay">
+        <p>RSVP will open later in the year when formal invitations are mailed.</p>
+      </div>
+    </div>
     <button type="submit" class="rsvp-submit" disabled>RSVPs Opening Soon</button>
   </form>
 </section>
