@@ -705,6 +705,7 @@ em { font-style: italic; color: var(--brown); }
 .rsvp-overlay {
   position: absolute;
   inset: 0;
+  z-index: 2;
   background: rgba(252, 246, 228, 0.9);
   border: 1px solid var(--border);
   box-shadow: 0 8px 24px rgba(107, 79, 58, 0.1);
@@ -729,6 +730,8 @@ em { font-style: italic; color: var(--brown); }
 .rsvp-form select {
   border: none; border-bottom: 1px solid var(--border); background: transparent; padding: 10px 2px;
   font-size: 15px; font-family: 'Jost', sans-serif; color: var(--espresso);
+  appearance: none; -webkit-appearance: none; -moz-appearance: none;
+  border-radius: 0;
 }
 .rsvp-form textarea {
   border: 1px solid var(--border); background: transparent; padding: 12px;
