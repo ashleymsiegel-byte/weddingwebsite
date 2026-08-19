@@ -609,14 +609,14 @@ em { font-style: italic; color: var(--brown); }
 .doodle-inline { width: 120px; height: 70px; object-fit: contain; flex-shrink: 0; }
 
 .flow-list { display: flex; flex-direction: column; gap: 30px; margin-bottom: 80px; list-style: none; padding: 0; }
-.flow-item h4 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; font-size: 21px; color: var(--espresso); margin: 0 0 8px; }
+.flow-item h4 { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; font-size: 21px; color: var(--brown); margin: 0 0 8px; }
+.flow-item h4::after { content: ''; display: block; width: 36px; height: 2px; background: var(--gold); margin-top: 8px; }
 .flow-item p { font-size: 13.5px; line-height: 1.85; color: var(--espresso); margin: 0; max-width: 680px; }
 .flow-feature { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
 .flow-feature .doodle-inline { margin-top: 6px; }
 .flow-feature .flow-copy { flex: 1; }
 
 .accent-text { color: var(--gold-dark); font-weight: 400; }
-.flow-item h4 { color: var(--espresso); }
 .eat-col-label { font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brown); margin: 0 0 20px; padding-bottom: 10px; border-bottom: 1px solid var(--border); font-family: 'Cormorant Garamond', serif; font-weight: 500; }
 
 .eat-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
