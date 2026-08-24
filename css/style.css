@@ -344,8 +344,9 @@ em { font-style: italic; color: var(--brown); }
 
 .story-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 300px 1fr;
   gap: 48px;
+  align-items: center;
   margin-bottom: 80px;
 }
 .story-columns h3 {
@@ -363,9 +364,24 @@ em { font-style: italic; color: var(--brown); }
 }
 .story-copy p:last-child { margin-bottom: 0; }
 
+.story-photo-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(107, 79, 58, 0.14);
+}
+
+@media (max-width: 1000px) {
+  .story-columns { grid-template-columns: 1fr 220px 1fr; gap: 32px; }
+}
+
 @media (max-width: 800px) {
   .story-proposal { grid-template-columns: 1fr; }
   .story-columns { grid-template-columns: 1fr; }
+  .story-photo-col img { max-width: 320px; margin: 0 auto; }
 }
 
 /* ---------- Weekend ---------- */
