@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20">
+<link rel="stylesheet" href="css/style.css?v=21">
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -67,8 +67,12 @@
 </main>
 
 <div class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
-  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous photo">&larr;</button>
   <img class="lightbox-img" src="" alt="">
+  <button class="lightbox-next" aria-label="Next photo">&rarr;</button>
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <div class="lightbox-counter" aria-hidden="true"></div>
+  <div class="lightbox-status sr-only" role="status" aria-live="polite"></div>
 </div>
 
 <footer class="site-footer">

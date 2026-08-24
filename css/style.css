@@ -847,6 +847,42 @@ em { font-style: italic; color: var(--brown); }
 }
 .lightbox-close:hover { color: var(--gold); }
 
+.lightbox-prev, .lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--ivory);
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 12px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+}
+.lightbox-prev { left: 12px; }
+.lightbox-next { right: 12px; }
+.lightbox-prev:hover, .lightbox-next:hover { color: var(--gold); }
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--muted-cream);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .lightbox-prev, .lightbox-next { font-size: 26px; padding: 8px; }
+  .lightbox-prev { left: 4px; }
+  .lightbox-next { right: 4px; }
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
