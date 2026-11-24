@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=22">
+<link rel="stylesheet" href="css/style.css?v=23">
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -52,42 +52,79 @@
   <h1 class="page-title">Meet Us In Sonoma</h1>
   <img class="leaf-divider" src="assets/leaf-divider.png" alt="">
 
-  <div class="rsvp-banner">Our invitations will arrive later this year, and RSVPs will be conveniently located here for you to share your plans with us.</div>
+  <div class="rsvp-banner" data-rsvp-banner>Our invitations will arrive later this year, and RSVPs will be conveniently located here for you to share your plans with us.</div>
 
-  <form class="rsvp-form">
+  <form class="rsvp-form" id="rsvp-form" novalidate>
     <div class="rsvp-fields-wrap">
-      <div class="rsvp-overlay">
-        <p>RSVP will open later in the year when formal invitations are mailed.</p>
+      <div class="rsvp-overlay" data-rsvp-overlay>
+        <p data-rsvp-overlay-text>RSVP will open later in the year when formal invitations are mailed.</p>
       </div>
       <fieldset class="rsvp-fieldset" disabled>
-        <legend class="sr-only">RSVP details (not yet open)</legend>
+        <legend class="sr-only">RSVP details</legend>
+
         <label>
-          <span class="field-label">Full name(s)</span>
-          <input type="text" placeholder="Ashley Siegel">
+          <span class="field-label">Name(s) of everyone in your party who is attending</span>
+          <span class="field-hint">Please list each guest named on your invitation who will be joining us. If no one is able to attend, just share your name.</span>
+          <textarea name="names" rows="2" required autocomplete="name"></textarea>
         </label>
+
         <label>
-          <span class="field-label">Will you be able to join us to celebrate?</span>
-          <select>
-            <option value="yes">Yes, we cannot wait!</option>
-            <option value="no">We sadly cannot make it</option>
-          </select>
+          <span class="field-label">Email address</span>
+          <span class="field-hint">We&rsquo;ll send your confirmation here.</span>
+          <input type="email" name="email" required autocomplete="email" inputmode="email">
         </label>
+
+        <fieldset class="rsvp-event">
+          <legend><span class="rsvp-event-date">Thursday, May 20</span><span class="rsvp-event-name">The Welcome</span></legend>
+          <div class="rsvp-choices">
+            <label class="rsvp-choice"><input type="radio" name="welcome" value="Attending" required><span>Joyfully attending</span></label>
+            <label class="rsvp-choice"><input type="radio" name="welcome" value="Not attending"><span>Sadly can&rsquo;t make it</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="rsvp-event">
+          <legend><span class="rsvp-event-date">Friday, May 21</span><span class="rsvp-event-name">The Wedding</span></legend>
+          <div class="rsvp-choices">
+            <label class="rsvp-choice"><input type="radio" name="wedding" value="Attending" required><span>Joyfully attending</span></label>
+            <label class="rsvp-choice"><input type="radio" name="wedding" value="Not attending"><span>Sadly can&rsquo;t make it</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="rsvp-event">
+          <legend><span class="rsvp-event-date">Saturday, May 22</span><span class="rsvp-event-name">The Send Off</span></legend>
+          <div class="rsvp-choices">
+            <label class="rsvp-choice"><input type="radio" name="sendoff" value="Attending" required><span>Joyfully attending</span></label>
+            <label class="rsvp-choice"><input type="radio" name="sendoff" value="Not attending"><span>Sadly can&rsquo;t make it</span></label>
+          </div>
+        </fieldset>
+
         <label>
           <span class="field-label">Dietary restrictions / allergies</span>
-          <textarea rows="2"></textarea>
+          <span class="field-hint">Please include whose restriction it is.</span>
+          <textarea name="dietary" rows="2"></textarea>
         </label>
         <label>
           <span class="field-label">Accessibility needs</span>
-          <textarea rows="2"></textarea>
+          <textarea name="accessibility" rows="2"></textarea>
         </label>
         <label>
           <span class="field-label">Note to the couple</span>
-          <textarea rows="3"></textarea>
+          <textarea name="note" rows="3"></textarea>
         </label>
+
+        <div class="rsvp-hp" aria-hidden="true">
+          <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
       </fieldset>
     </div>
+    <p class="rsvp-error" data-rsvp-error role="alert" hidden></p>
     <button type="submit" class="rsvp-submit" disabled>Coming Soon</button>
   </form>
+
+  <div class="rsvp-thanks" data-rsvp-thanks tabindex="-1" hidden>
+    <p class="rsvp-thanks-title">Thank you!</p>
+    <p>Your RSVP has been received. A confirmation is on its way to <strong data-rsvp-thanks-email></strong>. If you don&rsquo;t see it within a few minutes, check your spam folder.</p>
+  </div>
 </section>
 </main>
 
@@ -97,5 +134,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/rsvp.js?v=1"></script>
 </body>
 </html>
